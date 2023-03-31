@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin-top: 10px;
+    background-color: #505050;
+    color: whitesmoke;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.titulo-principal {
+    color: #bbbbbb;
+    font-size: 2rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+.contenedor .pelicula {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+
+.contenedor .pelicula .titulo {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 5px 0px 20px 0px;
+}
+
+.contenedor .pelicula .poster {
+    width: auto;
+    height:50vh;
+}
+
+.paginacion {
+    gap: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.paginacion button {
+    min-width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #101010;
+    background-color: #bbbbbb;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid #909090;
+    border-radius: 5px;
+}
+
+.paginacion button:hover {
+    background: #101010;
+    color: #bbbbbb;
+}
+
+#vuelve-arriba {
+    background-color: #505050;
+    font-size: xx-large;
+    position: fixed;
+    bottom: 25px;
+    right: 100px;
+    display: none;
+    z-index: 99;
+    border: none;
+}

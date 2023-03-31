@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Películas</title>
+</head>
+
+<body>
+
+  <h1 class="titulo-principal">¿Qué miramos hoy?</h1>
+  <div class="paginacion">
+    <button id="btnAnterior" hidden>◄</button>
+    <button id="btnPage">Página 1</button>
+    <button id="btnSiguiente" enabled>►</button>
+  </div>
+  <button onclick="topFunction()" id="vuelve-arriba">&#9757;</button>
+  <div class="contenedor"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
